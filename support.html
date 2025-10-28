@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - BikeCheck</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 10px;
+        }
+        
+        .content {
+            background: white;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        h2 {
+            color: #667eea;
+            margin: 2rem 0 1rem 0;
+            font-size: 1.5rem;
+        }
+        
+        h3 {
+            color: #555;
+            margin: 1.5rem 0 0.5rem 0;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        ul {
+            margin: 1rem 0 1rem 2rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        .faq-item {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        
+        .contact-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .contact-card a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Support</h1>
+            <p>Get help with BikeCheck</p>
+        </div>
+        
+        <div class="content">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <h3>How do I connect my Strava account?</h3>
+                <p>When you first open BikeCheck, tap "Sign in with Strava" and authorize the app to access your profile and activities. BikeCheck only requests the minimum permissions needed for bike maintenance tracking.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Why aren't all my bikes showing up?</h3>
+                <p>BikeCheck only shows bikes that have been used in recent activities. If you have a bike that hasn't been ridden recently, it won't appear in the app. Take a short ride and sync your activities to add it.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>How are service intervals calculated?</h3>
+                <p>Service intervals are based on actual ride time (moving time) from your Strava activities. When you create a service interval, BikeCheck tracks the cumulative ride time on that bike and notifies you when maintenance is due.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Can I use BikeCheck without Strava?</h3>
+                <p>Currently, BikeCheck requires Strava integration to track your bikes and activities. This ensures accurate maintenance scheduling based on your actual riding patterns.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>How do I reset a service interval?</h3>
+                <p>Open the service interval details and tap "Reset Interval". This resets the timer based on your current total ride time, indicating you've performed the maintenance.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Why am I not receiving notifications?</h3>
+                <p>Make sure you've enabled notifications in your device settings for BikeCheck. Also check that the "Notify" toggle is enabled for each service interval you want to be reminded about.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Is my data secure?</h3>
+                <p>Yes! All your data is stored locally on your device. BikeCheck doesn't upload your personal information to external servers. See our <a href="privacy.html">Privacy Policy</a> for full details.</p>
+            </div>
+            
+            <h2>Getting Started</h2>
+            <ol>
+                <li><strong>Connect Strava:</strong> Sign in with your Strava account</li>
+                <li><strong>Sync Data:</strong> BikeCheck will import your bikes and recent activities</li>
+                <li><strong>Create Service Intervals:</strong> Set up maintenance schedules for bike components</li>
+                <li><strong>Get Notified:</strong> Receive reminders when maintenance is due</li>
+                <li><strong>Reset When Done:</strong> Mark maintenance as complete to reset the timer</li>
+            </ol>
+            
+            <h2>Troubleshooting</h2>
+            
+            <h3>App is not syncing with Strava</h3>
+            <ul>
+                <li>Check your internet connection</li>
+                <li>Try logging out and back in to Strava</li>
+                <li>Make sure BikeCheck has permission to access your Strava data</li>
+            </ul>
+            
+            <h3>Service intervals seem incorrect</h3>
+            <ul>
+                <li>Verify your activities are properly categorized as "Ride" in Strava</li>
+                <li>Check that the correct bike was selected for each activity</li>
+                <li>Manual activities entered in Strava may not have accurate moving time</li>
+            </ul>
+            
+            <div class="contact-card">
+                <h3>Still Need Help?</h3>
+                <p>Report issues or request features on our GitHub repository:</p>
+                <a href="https://github.com/jonathanalexander229/bikecheck/issues">github.com/jonathanalexander229/bikecheck/issues</a>
+            </div>
+            
+            <a href="index.html" class="back-link">← Back to BikeCheck</a>
+        </div>
+    </div>
+</body>
+</html>
