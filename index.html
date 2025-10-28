@@ -95,6 +95,27 @@
             transform: translateY(-2px);
         }
         
+        .download-btn.disabled {
+            background: rgba(255, 255, 255, 0.03);
+            color: rgba(243, 244, 246, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            cursor: not-allowed;
+        }
+        
+        .download-btn.disabled:hover {
+            background: rgba(255, 255, 255, 0.03);
+            transform: none;
+        }
+        
+        .download-btn.beta {
+            background: rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .download-btn.beta:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        
         .footer {
             text-align: center;
             padding: 2rem 0;
@@ -161,14 +182,40 @@
             <p style="color: rgba(255, 255, 255, 0.9);">Available for iOS and Android</p>
             
             <div class="download-buttons">
-                <a href="#" class="download-btn">
+                <div class="download-btn disabled">
                     <span>📱</span>
-                    Download for iOS
-                </a>
-                <a href="#" class="download-btn">
+                    <div>
+                        <div>App Store</div>
+                        <div style="font-size: 0.8rem; opacity: 0.7;">Coming Soon</div>
+                    </div>
+                </div>
+                <div class="download-btn disabled">
                     <span>🤖</span>
-                    Download for Android
-                </a>
+                    <div>
+                        <div>Google Play</div>
+                        <div style="font-size: 0.8rem; opacity: 0.7;">Coming Soon</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 2rem;">
+                <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 1rem; font-size: 0.9rem;">Beta Testing Available</p>
+                <div class="download-buttons">
+                    <a href="#" class="download-btn beta">
+                        <span>✈️</span>
+                        <div>
+                            <div>TestFlight (iOS)</div>
+                            <div style="font-size: 0.8rem; opacity: 0.8;">Beta Access</div>
+                        </div>
+                    </a>
+                    <a href="#" class="download-btn beta">
+                        <span>🔧</span>
+                        <div>
+                            <div>APK Download (Android)</div>
+                            <div style="font-size: 0.8rem; opacity: 0.8;">Beta Access</div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
         
